@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+.gridContent{
+    color: white;
+}
+ *{
+    font-family: 'Work Sans', sans-serif;
+ }
+
+.maincss{
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+}
+
+.row .col{
+    padding: 0 !important;
+}
+
+.maindiv{
+    height: 100vh !important;
+}
+
+.side-nav{
+    width: auto !important;
+    height: 100vh !important;
+}
+
+.collapsible-body{
+    padding: 0 0 0 30px !important;
+}
+.side-nav.fixed .collapsible-body li a a{
+    padding: 0 !important;
+}
+
+input, ::-webkit-input-placeholder{
+    color: #000 !important
+}
+
+.input-field.col label{
+    left: 0 !important
+}
+
+.materialize-textarea{
+    color: #000 !important;
+}
+
+.materialize-textarea::placeholder{
+    color: #9e9e9e !important;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
+.upperIt > .collapsible-header{
+    text-transform: uppercase !important;
+}
+
+@media only screen and (max-width: 992px){
+    .side-nav.fixed{
+        -webkit-transform: translateX(0%) !important;
+        transform: translateX(0%) !important;
+    }
+}
