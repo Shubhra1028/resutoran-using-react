@@ -4,9 +4,10 @@ import {Navbar, NavItem} from "react-materialize";
 class Top extends Component{
     render(){
         return(
-                <Navbar className="teal darken-1" brand='Block AI' style={{'padding': '0 10vw'}} right>
-                <NavItem onClick={() => console.log('test click')}>Getting started</NavItem>
-                <NavItem href='components.html'>Components</NavItem>
+                <Navbar className="green accent-4" brand='Resutoran' style={{'padding': '0 10vw'}} right>
+                <NavItem className='bigLetters' href='/'>Home</NavItem>
+                <NavItem className='bigLetters' href='about'>About</NavItem>
+                <NavItem className='bigLetters' href='gallery'>Gallery</NavItem>
                 </Navbar>
         );
     }

@@ -1,22 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-.gridContent{
-    color: white;
-}
+
  *{
     font-family: 'Work Sans', sans-serif;
  }
-
-.maincss{
-    display: grid;
-    grid-template-columns: 20vw 80vw;
-}
 
 .row .col{
     padding: 0 !important;
 }
 
-.maindiv{
-    height: 100vh !important;
+.gridContent>.row{
+    margin-bottom: 0
+}
+
+.bgImg{
+    background-position: center;
+    background-size: cover;
 }
 
 .side-nav{
@@ -59,5 +57,234 @@ a:hover{
     .side-nav.fixed{
         -webkit-transform: translateX(0%) !important;
         transform: translateX(0%) !important;
+    }
+}
+
+.menuHomeHead{
+    border-bottom: 2px solid #eee;
+    margin-bottom: 0;
+    font-size: 1.7em;
+    padding-bottom: 5px;
+}
+
+.menuHome .list-group-item{
+    margin-bottom: 0px;
+    border: 0;
+    border-bottom: 1px solid #efeded;
+}
+
+.specialMenuHome>div>div{
+    height: 25vw;
+    border: 1px solid #fff;
+    box-sizing: border-box
+}
+
+.specialMenuHome::after, .maindiv::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.indicators{
+    display: none;
+}
+
+.sliderContainer .slider, .sliderContainer .slider> ul{
+    height: 300px !important
+}
+
+.specialMenuHome{
+    z-index: 22
+}
+
+.imgUrlAvatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.bigLetters{
+    text-transform: uppercase;
+}
+
+.itemprice{
+    float: right;
+    padding: 12px 0;
+    color: #ff8a00
+}
+
+.slider .slides li img{
+    background-image: url('https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-lush.png') !important;
+}
+
+.shopBoard{
+    margin-right: 8%;
+    text-align: center;
+    border: 1px solid antiquewhite;
+    outline: 5px solid #000;
+}
+.shopBoard > div{
+    padding: 10px;
+}
+.shopBoard p{
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.shopBoard  h1{
+    margin-top: 0 !important;
+}
+
+input{
+    height: 2.5rem !important;
+    width: 95% !important;
+}
+
+.input-field label{
+    transform: translateY(0);
+}
+
+.eror{
+    border-bottom-color: #f00;
+    box-shadow: 0 1px 0 0 #f00
+}
+
+.invalid{
+    border-bottom: 1px solid #9e9e9e !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.containerMargins{
+    margin: 0.5in auto !important;
+}
+
+.homeReserve form{
+    padding: 20px;
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.fas{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.carousel h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.page-footer{
+    background-color: #000 !important;
+    padding: 0.5in 0;
+    padding-top: 0.5in !important;
+}
+
+.specialMenuDiv{
+    background-color: #000000c7;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.specialMenuDiv > h3, .history h3{
+    font-size:  1.5rem; 
+    margin: 5px 0;
+}
+
+.specialMenuDiv > p:nth-of-type(1){
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+.specialMenuDiv > p:nth-of-type(2){
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    color: #00c853;
+}
+
+.specialMenuDiv > p{
+    display: table-cell;
+}
+
+.outerBox{
+    position: relative;
+    width: 100vw;
+    height: 40vh;
+    margin-bottom: 1in;
+}
+
+.innerBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000003b;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.giveMargin{
+    margin: 1in auto !important;
+}
+
+.history p, .highclassFac p{
+    font-size: 12px;
+    color: #989898;
+}
+
+.highclassFac img, .highclassFac p{
+    margin: 0 auto;
+}
+
+.chefGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.chefImg{
+    height: 3in;
+    background-position: top;
+    background-size: cover;
+}
+
+.galleryGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 0.5in !important;
+}
+
+.galleryGrid > div{
+    height: 20vw;
+    width: 100%;
+    background-color: crimson;
+}
+
+.modal{
+    height: fit-content;
+}
+
+.modal .modal-close:hover{
+    background-color: #00c853;
+}
+
+
+
+@media only screen and (max-width: 700px){
+    .specialMenuDiv>p{
+        display: none;
+    }
+    .outerBox{
+        height: 70vh;
+    }
+    .menuHome ul {
+        margin: 0 20%;
     }
 }

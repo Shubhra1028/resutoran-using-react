@@ -1,11 +1,10 @@
 import axios from 'axios';
 
-export function addModule(props){
-    const request = axios.post('http://0.0.0:/add_module', props);
-    console.log(request)
+export function makeReservation(props){
+    console.log(props)
     return{
-        type : 'ADD_MODULE',
-        payload : request
+        type : '',
+        payload : ''
     };
-};
+}
 
